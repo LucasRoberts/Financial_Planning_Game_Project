@@ -1,0 +1,55 @@
+How to play
+
+Set Up/Game Start:
+
+Each person picks a random starting age card and job card.
+People choose their type of living.
+
+
+How Each Turn Goes:
+
+The round begins with each player flipping over an action card from the main deck
+(the player with the lowest age card flips a card first and goes clockwise).
+They then will all fill out their Income Allocation Board by following the
+requirements on the action card. The players will then fill out the rest
+of the Income Allocation Board with their remaining income, abiding by their
+housing expenses, life expenses, savings fund, and retirement contributions.
+Round ends when all players finish filling out their boards.
+
+
+Rules/Game Pieces:
+Contents:
+Action Cards
+15 Job Cards
+5 Age Cards [25, 30, 35, 40, 45]
+Housing Cards  [Rent, Mortgage] ⇒
+Table of percent expenses per income
+
+Rules:
+
+Players have to allocate income to expenses before setting aside money for retirement. If you do not have enough money,
+you will take out a loan that will be paid off in the following turns.
+Players cannot exchange money, unless an action card indicates a transaction.
+Players can only contribute a maximum of X to Y account.
+Players will contribute at least X percent into life expenses.
+
+*Note: If you cheat, you are only cheating yourself.
+
+
+End/Winning:
+
+You win by reaching the retirement goal that is indicated on the initial
+Job card that you picked at the beginning of the game.
+
+
+Action Cards:
+
+
+
+
+Players can only contribute a maximum of X to Y account:
+
+
+
+Players will contribute at least X percent into life expenses:
+
