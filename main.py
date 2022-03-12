@@ -6,7 +6,7 @@ Financial Planning Course Project. It will be a single player game whose aim is 
 retirement and Investing. As such the goal of the game is to reach a certain amount of money by the end of X turns while
 managing expenses such as insurance, healthcare, rent and others.
 Credit: The structure of the game loops was taken from 'baraltech' 'Menu-System-PyGame' repository
-(https://github.com/baraltech/Menu-System-PyGame/blob/main/button.py)
+(https://github.com/baraltech/Menu-System-PyGame)
 from the video they used on their YouTube (https://www.youtube.com/watch?v=GMBqjxcKogA)
 """
 
@@ -84,7 +84,7 @@ def play(players):
     players = players
     set_player_info(players)
     while True:
-        PLAY_MOUSE_POS = pygame.mouse.get_pos()
+        # PLAY_MOUSE_POS = pygame.mouse.get_pos()
 
         SCREEN.fill("black")
         pygame.display.set_caption("Retirement Reality")
