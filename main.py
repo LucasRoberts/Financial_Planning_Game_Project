@@ -15,10 +15,7 @@ import sys
 from button import Button
 from player import Player
 
-# Initializing needed variables
-running = True
-BLACK = (0, 0, 0)
-WHITE = (255, 255, 255)
+
 ORIGIN = (0, 0)
 
 # Initializes pygame
@@ -44,28 +41,36 @@ def set_player_info(player_amount):
         player_income = player_1.job[job_progression]
         print(f"The starting age for Player 1 is {player_1.age} and the job is {player_1.job['Job Title']}")
         print(f"The Player 1's income is {player_income}")
+        player_1.balance = player_income
+        return [player_1]
     elif player_amount == 2:
         player_1 = Player()
         player_2 = Player()
         job_progression = player_1.get_new_income()
         player_1_income = player_1.job[job_progression]
+        player_1.balance = player_1_income
         job_progression = player_2.get_new_income()
         player_2_income = player_2.job[job_progression]
+        player_2.balance = player_2_income
         print(f"The starting age for Player 1 is {player_1.age} and the job is {player_1.job['Job Title']}")
         print(f"The Player 1's income is {player_1_income}")
         print("\n")
         print(f"The starting age for Player 2 is {player_2.age} and the job is {player_2.job['Job Title']}")
         print(f"The Player 2's income is {player_2_income}")
+        return [player_1, player_2]
     elif player_amount == 3:
         player_1 = Player()
         player_2 = Player()
         player_3 = Player()
         job_progression = player_1.get_new_income()
         player_1_income = player_1.job[job_progression]
+        player_1.balance = player_1_income
         job_progression = player_2.get_new_income()
         player_2_income = player_2.job[job_progression]
+        player_2.balance = player_2_income
         job_progression = player_3.get_new_income()
         player_3_income = player_3.job[job_progression]
+        player_3.balance = player_3_income
         print(f"The starting age for Player 1 is {player_1.age} and the job is {player_1.job['Job Title']}")
         print(f"The Player 1's income is {player_1_income}")
         print("\n")
@@ -74,15 +79,29 @@ def set_player_info(player_amount):
         print("\n")
         print(f"The starting age for Player 3 is {player_3.age} and the job is {player_3.job['Job Title']}")
         print(f"The Player 3's income is {player_3_income}")
+        return [player_1, player_2, player_3]
 
 
 def get_font(size):
     return pygame.font.Font("assets/font.ttf", size)
 
 
+def display_stats(player_list):
+    # TODO 2: Display player specfic information
+
+    for player in player_list:
+        print(f"Player 1's balance:{player.balance}\nsaving:{player.savings}\nroth:"
+              f"{player.roth}")
+
+
+def round_selector(player_amount):
+    # TODO 3: Using the amount of players display which turn it is in each round
+    pass
+
+
 def play(players):
-    players = players
-    set_player_info(players)
+    player_list = set_player_info(players)
+    display_stats(player_list)
     while True:
         PLAY_MOUSE_POS = pygame.mouse.get_pos()
 

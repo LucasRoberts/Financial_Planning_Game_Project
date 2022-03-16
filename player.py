@@ -15,9 +15,9 @@ class Player:
         self.savings = 0
 
     def get_new_income(self):
-        if self.age >= 40:
+        if self.age > 40:
             return "Expert Income"
-        elif self.age >= 30:
+        elif self.age > 30:
             return "Intermediate Income"
         else:
             return "Entry Income"
